@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-os-detect() {
+os_detect() {
   OS=
   case $OSTYPE in
     darwin*)
@@ -26,9 +26,9 @@ os-detect() {
 }
 
 if [[ $BASH_SOURCE[0] != $0 ]]; then
-  export -f os-detect
+  export -f os_detect
 else
-  os-detect "${@}"
+  os_detect "${@}"
   exit $?
 fi
 
