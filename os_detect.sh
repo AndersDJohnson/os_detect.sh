@@ -26,7 +26,9 @@ os_detect() {
 }
 
 if [[ $BASH_SOURCE[0] != $0 ]]; then
-  export -f os_detect
+  if [ -n "$BASH_VERSION" ]; then
+    export -f os_detect
+  fi
 else
   os_detect "${@}"
   exit $?
