@@ -18,3 +18,7 @@ source os_detect.sh/os_detect.sh
 
 OS=os_detect
 ```
+
+## Used by
+
+* [AndersDJohnson/dotfiles](https://github.com/AndersDJohnson/dotfiles)
