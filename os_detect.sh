@@ -2,10 +2,10 @@
 
 os_detect() {
   OS=
-  # could also check `uname`
+  # TODO: Could also check `uname`.
   case $OSTYPE in
     darwin*)
-      # Should we change to "darwin" or "osx"?
+      # TODO Should we change to "darwin" or "osx"?
       OS=mac
       ;;
     linux*)
@@ -20,6 +20,7 @@ os_detect() {
     msys*)
       OS=linux-win
       ;;
+    # TODO: Handle MinGW?
     freebsd*)
       OS=freebsd
       ;;
